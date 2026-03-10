@@ -1,6 +1,6 @@
 # Measuring Quantum Preimage Attacks: Classical vs. Quantum-Native Hashing
 
-This project provides an experimental framework for evaluating the security of two hashing paradigms—**Classical-Style logic** and **Quantum-Native entanglement**—against a preimage attack based on **Grover's Algorithm**.
+This project provides an experimental framework for evaluating the security of two hashing paradigms **Classical-Style logic** and **Quantum-Native entanglement** against a preimage attack based on **Grover's Algorithm**.
 
 By executing these attacks on the IBM **Heron-class** hardware, the circuit depth and success probability is quantified to analyse how different hashing structures influence vulnerability to quantum cryptanalysis.
  
