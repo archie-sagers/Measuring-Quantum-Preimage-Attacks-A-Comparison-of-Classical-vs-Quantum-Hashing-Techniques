@@ -70,6 +70,5 @@ Using a statevector simulator, I confirmed that the Quantum-Native design uses *
 | :--- | :--- | :--- |
 | **Attack Depth** | 9 | 11 |
 | **Gate Complexity** | High (Toffoli-heavy) | Moderate (CNOT-heavy) |
-| **Hardware Vulnerability** | Lower (Shallow depth) | Higher (Error accumulation) |
 
 ---
