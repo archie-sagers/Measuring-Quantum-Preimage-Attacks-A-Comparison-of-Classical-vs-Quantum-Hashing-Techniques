@@ -3,6 +3,9 @@
 This project provides an experimental framework for evaluating the security of two hashing paradigms **Classical-Style logic** and **Quantum-Native entanglement** against a preimage attack based on **Grover's Algorithm**.
 
 By executing these attacks on the IBM **Heron-class** hardware, the circuit depth and success probability is quantified to analyse how different hashing structures influence vulnerability to quantum cryptanalysis.
+
+## Abstract
+The project investigates the security of two distinct hashing paradigms against quantum cryptanalysis (based on Grover’s algorithm). While Grover’s Algorithm offers a theoretical quadratic speedup for finding hash preimages, the overhead of implementing the algorithm on real hardware can negate these gains. This project compares Classical-Style Hashing (translated reversible logic) against Quantum Hashing (rotation and entanglement-based logic). By benchmarking these on the IBM Heron architecture, the project aims to show how increased circuit depth and computation costs impact the success probability of preimage attacks. Performing a head-to-head benchmark can determine if a shallow quantum hash is more secure than a deep classical hash due to noise accumulation.
  
 ---
 
