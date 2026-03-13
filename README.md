@@ -45,7 +45,7 @@ The results showed a clear Signal-to-Noise Ratio, proving that Heron-class proce
 
 ## Results
 
-Below is the comparison of the execution results for the two target preimages. Note the distinct spikes at the correct bitstrings compared to the "noise floor" of the incorrect states.
+Below is the comparison of the Quantum execution results for the two target preimages. Note the distinct spikes at the correct bitstrings compared to the "noise floor" of the incorrect states.
 
 ![Quantum Attack Results Comparison](quantum_attack_results.png)
 
@@ -75,3 +75,32 @@ Using a statevector simulator, I confirmed that the Quantum-Native design uses *
 | **Gate Complexity** | High (Toffoli-heavy) | Moderate (CNOT-heavy) |
 
 ---
+
+# Quantum vs Classical
+Below is a comparison of the Quantum execution results vs the classical execution results for bitstring 101.
+
+<img width="640" height="480" alt="classical_vs_quantum_attack_results" src="https://github.com/user-attachments/assets/7fa90a54-ec0a-4016-b9b8-81277d9f8629" />
+
+* **The Classical Results**: The data shows a singular amplified peak. This is the result of Deterministic Mapping, where the classical-style hash only has one correct key. Because bitstring 011 is the only key that mathematically resolves to target 101, Grover's Algorithm focuses the amplification power on that single state.
+
+* **The Quantum Results**: These results show a lower primary peak and notably, a secondary peak. This distribution is the result of Probabilistic Mapping, where the Quantum-native hash acts like a probability vector. Instead of one correct answer, multiple inputs (100 and 110) can lead to the target of 101, causing Grover's Algorithm to share the amplification across multiple valid states
+
+### Why the Results Don't Converge
+The reason the spikes do not align at the same value is that they are solving two different mathematical puzzles to reach the same goal. The Classical Hash uses a reversible translation of Boolean logic (Toffoli/CNOT), while the Quantum-Native Hash uses rotations and rings of entanglement. Because the internal workings of these two functions is different, the preimage required to produce target 101 is different for each.
+
+### Hardware Performance on the Heron Chip
+Executing these circuits on ibm_fez and ibm_marrakesh showcases the robustness of the Heron architecture. The fact that the target states are ~5x more frequent than the incorrect states proves that modern error suppression and high-fidelity gates are making small-scale quantum cryptanalysis more practical.
+
+# Summary
+This study concludes that while quantum-native hashes leverage entanglement to create complex signatures with fewer gates, the total circuit depth remains the primary vulnerability. For a hash to be truly quantum-resistant, it must not only be mathematically complex but also designed to minimize the T-gate complexity and depth during a Grover-style attack.
+
+---
+# References
+1.   A Fast Quantum Mechanical Algorithm for Database Search Author: Lov K. Grover (1996)
+2.   Quantum Hash Functions Authors: Farid Ablayev and Alexander Vasiliev (2014)
+3.   Implementing Grover's Algorithm on Noisy Intermediate-Scale Quantum Computers Authors: K. Mandviwalla, K. Ohshita, and K. Honjo (2018)
+4.   Quantum Search on Noisy Intermediate-Scale Quantum Devices Authors: Kwangmin Yu and Vladimir E. Korepin (2022)
+5.   Quantum Resource Analysis of Low-Round Keccak-f/SHA-3 Authors: R. R. Gilkolaei and R. Ebrahimi (2025)
+6.   Automatic Synthesis of Quantum Oracles Authors: L. Gillen, T. Monz, and M. Roetteler (2023)
+7.   Quantum Computing in the NISQ era and beyond Author: John Preskill (2018)
+
