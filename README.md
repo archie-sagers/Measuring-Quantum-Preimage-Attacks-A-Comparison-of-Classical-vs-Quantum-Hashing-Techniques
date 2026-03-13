@@ -96,11 +96,10 @@ This study concludes that while quantum-native hashes leverage entanglement to c
 
 ---
 # References
-1.   A Fast Quantum Mechanical Algorithm for Database Search Author: Lov K. Grover (1996)
-2.   Quantum Hash Functions Authors: Farid Ablayev and Alexander Vasiliev (2014)
-3.   Implementing Grover's Algorithm on Noisy Intermediate-Scale Quantum Computers Authors: K. Mandviwalla, K. Ohshita, and K. Honjo (2018)
-4.   Quantum Search on Noisy Intermediate-Scale Quantum Devices Authors: Kwangmin Yu and Vladimir E. Korepin (2022)
-5.   Quantum Resource Analysis of Low-Round Keccak-f/SHA-3 Authors: R. R. Gilkolaei and R. Ebrahimi (2025)
-6.   Automatic Synthesis of Quantum Oracles Authors: L. Gillen, T. Monz, and M. Roetteler (2023)
-7.   Quantum Computing in the NISQ era and beyond Author: John Preskill (2018)
+*  Ablayev, Farid, and Alexander Vasiliev. “Quantum Hashing.” arXiv:1310.4922. Preprint, arXiv, October 18, 2013. https://doi.org/10.48550/arXiv.1310.4922.
+*  Gilkolae, Ramin Rezvani. “Quantum Resource Analysis of Low-Round Keccak/SHA-3 Preimage Attack: From Classical 2^57.8 to Quantum 2^28.9 Using Qiskit Modeling.” arXiv:2512.14759. Preprint, arXiv, December 15, 2025. https://doi.org/10.48550/arXiv.2512.14759.
+*  Grover, Lov K. “A Fast Quantum Mechanical Algorithm for Database Search.” arXiv:quant-Ph/9605043. Preprint, arXiv, November 19, 1996. https://doi.org/10.48550/arXiv.quant-ph/9605043.
+*  Henderson, Jessie M., Elena R. Henderson, Aviraj Sinha, Mitchell A. Thornton, and D. Michael Miller. “Automated Quantum Oracle Synthesis with a Minimal Number of Qubits.” arXiv:2304.03829. Preprint, arXiv, April 7, 2023. https://doi.org/10.48550/arXiv.2304.03829.
+*  Preskill, John. “Quantum Computing in the NISQ Era and Beyond.” arXiv:1801.00862. Preprint, arXiv, July 31, 2018. https://doi.org/10.48550/arXiv.1801.00862.
+*  Zhang, Kun, Kwangmin Yu, and Vladimir Korepin. “Quantum Search on Noisy Intermediate-Scale Quantum Devices.” arXiv:2202.00122. Preprint, arXiv, September 27, 2022. https://doi.org/10.48550/arXiv.2202.00122.
 
