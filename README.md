@@ -47,7 +47,7 @@ The results showed a clear Signal-to-Noise Ratio, proving that Heron-class proce
 
 Below is the comparison of the Quantum execution results for the two target preimages. Note the distinct spikes at the correct bitstrings compared to the "noise floor" of the incorrect states.
 
-![Quantum Attack Results Comparison](quantum_attack_results.png)
+<img width="640" height="480" alt="quantum_attack_results" src="https://github.com/user-attachments/assets/0f5b6c9e-95e2-47d2-b73d-990306704b62" />
 
 ### Mathematical Verification
 Using a statevector simulator, I confirmed that the Quantum-Native design uses **Probabilistic Mapping**. 
